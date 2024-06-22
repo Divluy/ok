@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy</title>
+    <link rel="stylesheet" href="/buy.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+     <a href="#" class="logo">ACE</a>
+      <a href="#" class="close">Man</a>
+      <a href="#" class="close">Woman</a>
+      <a href="#" class="close">Kide</a>
+      <a href="#" class="close">Accesorie</a>
+      <a href="./buy.html" class="icon1"><i class='bx bx-shopping-bag'></i></a> 
+      <a href="#" onclick="Funtion()" class="icon1"><i class='bx bxs-moon fa' ></i></a>
+        <a href="./dive.html" class="back"><i class='bx bx-arrow-back fa'></i>Back To Home</a>
+        <h1>Shopping Cart</h1>
+  </div>
+  <div class="buy">
+    <div class="box">
+        <img src="./img/img1.jpg" alt="" class="pic1">
+        <p class="name">T-shirt</p>
+        <input type="number" oninput="FuntionX(value)" onchange="FuntionX(value)">
+        <p class="name1">$23.00</p>
+    </div>
+    <div class="box">
+        <img src="./img/img2.webp" alt="" class="pic1">
+        <p class="name">Seaht</p>
+        <input type="number" oninput="FuntionC(value)" onchange="FuntionC(value)">
+        <p class="name1">$20.99</p>
+    </div>
+    <div class="box">
+        <img src="./img/img3.jpg" alt="" class="pic1">
+        <p class="name">Trousers</p>
+        <input type="number" oninput="FuntionD(value)" onchange="FuntionD(value)">
+        <p class="name1">$19.00</p>
+    </div>
+    <div class="box">
+        <img src="./img/img8.jpg" alt="" class="pic1">
+        <p class="name">
+            Cropped</p>
+        <input type="number" oninput="FuntionF(value)" onchange="FuntionF(value)">
+        <p class="name1">$21.09</p>
+    </div>
+    <div class="box">
+        <img src="./img/img4.jpg" alt="" class="pic1">
+        <p class="name">
+            Loose</p>
+        <input type="number" oninput="FuntionG(value)" onchange="FuntionG(value)">
+        <p class="name1">$19.00</p>
+    </div>
+    <div class="box">
+        <img src="./img/img5.jpg" alt="" class="pic1">
+        <p class="name">
+            Flower</p>
+        <input type="number" oninput="FuntionA(value)" onchange="FuntionA(value)">
+        <p class="name1">$20.00</p>
+    </div>
+    <div class="box">
+        <img src="./img/img6.jpg" alt="" class="pic1">
+        <p class="name">
+            Wide</p>
+        <input type="number" oninput="FuntionB(value)" onchange="FuntionB(value)">
+        <p class="name1">$20.99</p>
+    </div>
+    <div class="box">
+        <img src="./img/img14.jpg" alt="" class="pic1">
+        <p class="name">width</p>
+        <input type="number" oninput="FuntionE(value)" onchange="FuntionE(value)">
+        <p class="name1">$19.00</p>
+    </div>
+    <div class="box">
+        <img src="./img/img11.jpg" alt="" class="pic1">
+        <p class="name">Dj</p>
+        <input type="number" oninput="FuntionO(value)" onchange="FuntionO(value)">
+        <p class="name1">$21.00</p>
+    </div>
+    <div class="box">
+        <img src="./img/img10.jpg" alt="" class="pic1">
+        <p class="name">
+            Swage</p>
+        <input type="number" oninput="FuntionN(value)" onchange="FuntionN(value)">
+        <p class="name1">$22.00</p>
+    </div>
+    <div class="box">
+        <img src="./img/img12.jpg" alt="" class="pic1">
+        <p class="name">
+            Fully</p>
+        <input type="number" oninput="FuntionW(value)" onchange="FuntionW(value)">
+        <p class="name1">$24.00</p>
+    </div>
+    <div class="box">
+        <img src="./img/img13.jpg" alt="" class="pic1">
+        <p class="name">
+            Relaxed</p>
+        <input type="number" oninput="FuntionS(value)" onchange="FuntionS(value)">
+        <p class="name1">$20.00</p>
+    </div>
+  </div>
+  <div class="total">
+    <h2 id="Total">Totale:</h2>
+  <button><a href="./payment.html">PAYMENT</a></button>
+  </div>
+  <div class="messege"><span id="ti"></span></div>
+</div>
+</body>
+<script>
+    function Funtion(){
+        document.body.classList.toggle("mode");
+        document.body.style.transition="0.7s";
+    }
+    function FuntionX(value){
+        document.getElementById("ti").innerHTML=value;
+        document.getElementById("Total").innerHTML="Total:"+"$"+value*23;
+        document.getElementById("ti").style.backgroundColor="red";
+        document.getElementById("ti").style.width="40px";
+        document.getElementById("ti").style.height="40px";
+        document.getElementById("ti").style.color="white";
+        document.getElementById("ti").style.border="1px solid black";
+
+    }
+    function FuntionC(value){
+        document.getElementById("ti").innerHTML=value;
+        document.getElementById("Total").innerHTML="Total:"+"$"+value*20.99;
+        document.getElementById("ti").style.backgroundColor="red";
+        document.getElementById("ti").style.width="40px";
+        document.getElementById("ti").style.height="40px";
+        document.getElementById("ti").style.color="white";
+        document.getElementById("ti").style.border="1px solid black";
+
+    }
+    function FuntionD(value){
+        document.getElementById("ti").innerHTML=value;
+        document.getElementById("Total").innerHTML="Total:"+"$"+value*19.00;
+        document.getElementById("ti").style.backgroundColor="red";
+        document.getElementById("ti").style.width="40px";
+        document.getElementById("ti").style.height="40px";
+        document.getElementById("ti").style.color="white";
+        document.getElementById("ti").style.border="1px solid black";
+
+    }
+    function FuntionF(value){
+        document.getElementById("ti").innerHTML=value;
+        document.getElementById("Total").innerHTML="Total:"+"$"+value*21.00;
+        document.getElementById("ti").style.backgroundColor="red";
+        document.getElementById("ti").style.width="40px";
+        document.getElementById("ti").style.height="40px";
+        document.getElementById("ti").style.color="white";
+        document.getElementById("ti").style.border="1px solid black";
+
+    }
+    function FuntionG(value){
+        document.getElementById("ti").innerHTML=value;
+        document.getElementById("Total").innerHTML="Total:"+"$"+value*19.00;
+        document.getElementById("ti").style.backgroundColor="red";
+        document.getElementById("ti").style.width="40px";
+        document.getElementById("ti").style.height="40px";
+        document.getElementById("ti").style.color="white";
+        document.getElementById("ti").style.border="1px solid black";
+    }
+    function FuntionA(value){
+        document.getElementById("ti").innerHTML=value;
+        document.getElementById("Total").innerHTML="Total:"+"$"+value*20.00;
+        document.getElementById("ti").style.backgroundColor="red";
+        document.getElementById("ti").style.width="40px";
+        document.getElementById("ti").style.height="40px";
+        document.getElementById("ti").style.color="white";
+        document.getElementById("ti").style.border="1px solid black";
+    }
+    function FuntionB(value){
+        document.getElementById("ti").innerHTML=value;
+        document.getElementById("Total").innerHTML="Total:"+"$"+value*20.99;
+        document.getElementById("ti").style.backgroundColor="red";
+        document.getElementById("ti").style.width="40px";
+        document.getElementById("ti").style.height="40px";
+        document.getElementById("ti").style.color="white";
+        document.getElementById("ti").style.border="1px solid black"; 
+    }
+    function FuntionE(value){
+        document.getElementById("ti").innerHTML=value;
+        document.getElementById("Total").innerHTML="Total:"+"$"+value*19.00;
+        document.getElementById("ti").style.backgroundColor="red";
+        document.getElementById("ti").style.width="40px";
+        document.getElementById("ti").style.height="40px";
+        document.getElementById("ti").style.color="white";
+        document.getElementById("ti").style.border="1px solid black";
+    }
+    function FuntionO(value){
+        document.getElementById("ti").innerHTML=value;
+        document.getElementById("Total").innerHTML="Total:"+"$"+value*21.00;
+        document.getElementById("ti").style.backgroundColor="red";
+        document.getElementById("ti").style.width="40px";
+        document.getElementById("ti").style.height="40px";
+        document.getElementById("ti").style.color="white";
+        document.getElementById("ti").style.border="1px solid black";
+    }
+    function FuntionN(value){
+        document.getElementById("ti").innerHTML=value;
+        document.getElementById("Total").innerHTML="Total:"+"$"+value*22.00;
+        document.getElementById("ti").style.backgroundColor="red";
+        document.getElementById("ti").style.width="40px";
+        document.getElementById("ti").style.height="40px";
+        document.getElementById("ti").style.color="white";
+        document.getElementById("ti").style.border="1px solid black";
+    }
+    function FuntionW(value){
+        document.getElementById("ti").innerHTML=value;
+        document.getElementById("Total").innerHTML="Total:"+"$"+value*24.00;
+        document.getElementById("ti").style.backgroundColor="red";
+        document.getElementById("ti").style.width="40px";
+        document.getElementById("ti").style.height="40px";
+        document.getElementById("ti").style.color="white";
+        document.getElementById("ti").style.border="1px solid black";
+    }
+    function FuntionS(value){
+        document.getElementById("ti").innerHTML=value;
+        document.getElementById("Total").innerHTML="Total:"+"$"+value*20.00;
+        document.getElementById("ti").style.backgroundColor="red";
+        document.getElementById("ti").style.width="40px";
+        document.getElementById("ti").style.height="40px";
+        document.getElementById("ti").style.color="white";
+        document.getElementById("ti").style.border="1px solid black";
+    }
+</script>
+</html>

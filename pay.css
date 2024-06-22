@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: bisque;
+transform: slide 3s ease-in forwards;
+}
+div{
+    border: 3px solid black;
+    height: 300px;
+    width: 300px;
+    margin-left: 40%;
+    position: relative;
+    top: 200px;
+    box-shadow: 1px 2px 2px 1px gray;
+    border-radius: 50%;
+    background-color: cornflowerblue;
+    animation: slig 9s ease forwards infinite;
+    right: 200px;
+    
+}
+div:hover{
+   
+    box-shadow: 1px 2px 2px 1px rgb(255, 248, 248);
+    transition: 0.6s; 
+}
+nav{
+    border: 3px solid black;
+    height: 300px;
+    width: 300px;
+    margin-left: 40%;
+    position: relative;
+    top: 200px;
+    box-shadow: 1px 2px 2px 1px gray;
+    border-radius: 50%;
+    background-color: cornflowerblue;
+    animation: slig 9s ease forwards infinite;
+    right: 200px;
+    left: 200px;
+
+
+
+  
+
+}
+   
+@keyframes slig{
+    0%{
+        transform: translateY(100px);
+        transform: rotate(360deg);
+        border-radius: 50%;
+        border: 10px dotted chartreuse;
+       
+        
+    }
+   
+}
+
+
